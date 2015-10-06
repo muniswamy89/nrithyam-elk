@@ -2,12 +2,12 @@ elasticsearch:
   extends:
     file: docker-compose-common.yml
     service: elasticsearch
-  image: nrithyam/elasticsearch:1.7.1
+  image: nrithyamelk_elasticsearch
 logstash:
   extends:
     file: docker-compose-common.yml
     service: logstash
-  image: nrithyam/logstash:1.5.3
+  image: nrithyamelk_logstash
   links:
     - elasticsearch:elasticsearch
 kibana:
