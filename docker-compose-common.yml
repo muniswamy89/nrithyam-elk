@@ -10,7 +10,7 @@ logstash:
     #basic config hence I have not set any env
   
     LOGSPOUT: ignore 
-  command: -f /etc/logstash.sample.conf
+  command: -f /etc/logstash.conf
 kibana:
   ports:
     - "80:5601"
